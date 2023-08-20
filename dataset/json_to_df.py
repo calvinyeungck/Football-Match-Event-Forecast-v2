@@ -13,11 +13,11 @@ import os
 import argparse
 #get the path in /data_pool_1/statsbomb_2023/events_and_frames/data
 parser = argparse.ArgumentParser()
-parser.add_argument('--path_360', type=str, default='/data_pool_1/statsbomb_2023/events_and_frames/data/')
-parser.add_argument('--path_events', type=str, default='/data_pool_1/statsbomb_2023/events_and_frames/data/events/') #n=580, dropping matches with no 360 frames, n=579
-parser.add_argument('--path_lineups', type=str, default='/data_pool_1/statsbomb_2023/events_and_frames/data/lineups/')
-parser.add_argument('--path_matches', type=str, default='/data_pool_1/statsbomb_2023/events_and_frames/data/matches/2/')
-parser.add_argument('--out_path', type=str, default='/home/c_yeung/workspace6/python/statsbomb_conference_2023/data')
+parser.add_argument('--path_360', type=str, default='events_and_frames/data/')
+parser.add_argument('--path_events', type=str, default='events_and_frames/data/events/') #n=580, dropping matches with no 360 frames, n=579
+parser.add_argument('--path_lineups', type=str, default='events_and_frames/data/lineups/')
+parser.add_argument('--path_matches', type=str, default='events_and_frames/data/matches/2/')
+parser.add_argument('--out_path', type=str, default='data')
 args = parser.parse_args()
 path_360 = args.path_360
 path_events= args.path_events
