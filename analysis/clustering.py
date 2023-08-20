@@ -13,8 +13,8 @@ from sklearn.cluster import MeanShift, estimate_bandwidth
 #ref https://mplsoccer.readthedocs.io/en/latest/gallery/radar/plot_radar.html
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--sequnces_pattern_df_path', type=str, default='/home/c_yeung/workspace6/python/statsbomb_conference_2023/script/analysis/sequences_pattern.csv')
-parser.add_argument('--out_path', type=str, default='/home/c_yeung/workspace6/python/statsbomb_conference_2023/script/analysis/fig_clust_final')
+parser.add_argument('--sequnces_pattern_df_path', type=str, default='analysis/sequences_pattern.csv')
+parser.add_argument('--out_path', type=str, default='analysis/fig_clust')
 parser.add_argument('--with_other','-wo', default=False, action='store_true')
 args = parser.parse_args()
 
