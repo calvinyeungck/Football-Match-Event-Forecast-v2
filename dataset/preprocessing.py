@@ -10,8 +10,8 @@ import os
 #preprocessing the event_df.csv as in (Yeung et al. 2023)
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--event_df_path","-d", help="event_df.csv path",default="/home/c_yeung/workspace6/python/statsbomb_conference_2023/data/event_df.csv")
-parser.add_argument("--out_path","-o", help="output folder path",default="/home/c_yeung/workspace6/python/statsbomb_conference_2023/data/")
+parser.add_argument("--event_df_path","-d", help="event_df.csv path",default="data/event_df.csv")
+parser.add_argument("--out_path","-o", help="output folder path",default="data/")
 parser.add_argument("--sample_df","-s", help="output a sample of event_df.csv",default=True, required=False)
 parser.add_argument("--testing","-t", help="test the code on reduced size df",default=False, required=False)
 args = parser.parse_args()
