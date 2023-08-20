@@ -28,11 +28,15 @@ python model.train_predict.py --param
 python model.train_predict.py
 ```
 ### Analysis the team tactics
-1. Extract team tactics
+1. Extract team tactics in actions
 ```
-python 
+python seq_mining.sequential_pattern_mining_action.py -a PrefixSpan -s 0.3
 ```
-2. Calculate the possession metrics (HPUS and HPUS+)
+2. Extract team tactics in zones
+```
+python seq_mining.sequential_pattern_mining_zone.py -a PrefixSpan -s 0.3
+```
+3. Calculate the possession metrics (HPUS and HPUS+)
 ```
 python analysis.metrics.py
 ```
