@@ -5,8 +5,8 @@ import os
 import pdb
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--prediction_df_path', type=str, default='/home/c_yeung/workspace6/python/statsbomb_conference_2023/result/final/prediction/prediction_df.csv')
-parser.add_argument('--out_path', type=str, default='/home/c_yeung/workspace6/python/statsbomb_conference_2023/script/analysis')
+parser.add_argument('--prediction_df_path', type=str, default='result/prediction/prediction_df.csv')
+parser.add_argument('--out_path', type=str, default='analysis')
 args = parser.parse_args()
 
 if not os.path.exists(args.out_path):
@@ -88,9 +88,6 @@ possession_metrics_df = pd.DataFrame(possession_metrics_list)
 possession_metrics_df.to_csv(os.path.join(args.out_path,'possession_metrics_df.csv'),index=False)
 
 print("end processing")
-
-
-
 
 
 '''
