@@ -27,7 +27,7 @@ python model.train_predict.py --param
 ```
 python model.train_predict.py
 ```
-### Analysis the team tactics
+### Extract and evaluate the team tactics
 1. Extract team tactics in actions
 ```
 python seq_mining.sequential_pattern_mining_action.py -a PrefixSpan -s 0.3
