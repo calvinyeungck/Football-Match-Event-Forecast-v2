@@ -108,9 +108,9 @@ def encode_nested_list_act(nested_list):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Preprocess StatsBomb data and create SPMF input files.')
     parser.add_argument('-t', '--possession_team', type=str, help='Subset to consider data for the specified possession team.')
-    parser.add_argument('-i', '--input_dir', required=False, type=str, default="/home/c_yeung/workspace6/python/statsbomb_conference_2023/data/analysis_df.csv", help='The directory where the train_df2.csv is located.')
-    parser.add_argument('-o', '--output_dir', required=False, type=str, default=os.path.join(os.getcwd(), 'sequence_data_action_analysis'), help='The directory where you want to the output files to be written out to.')
-    parser.add_argument('--seq_mining_output_dir', required=False, type=str, default=os.path.join(os.getcwd(), 'spmf_output_action_analysis'), help='The directory where you want to the output files to be written out to.')
+    parser.add_argument('-i', '--input_dir', required=False, type=str, default="data/analysis_df.csv", help='The directory where the train_df2.csv is located.')
+    parser.add_argument('-o', '--output_dir', required=False, type=str, default=os.path.join('seq_mining', 'sequence_data_action_analysis'), help='The directory where you want to the output files to be written out to.')
+    parser.add_argument('--seq_mining_output_dir', required=False, type=str, default=os.path.join('seq_mining', 'spmf_output_action_analysis'), help='The directory where you want to the output files to be written out to.')
     parser.add_argument('-a', '--algorithm', required=False, default="CM-SPADE", choices=["CM-SPADE", "PrefixSpan"], type=str, help='SPMF algorithm to apply: CM-SPADE or PrefixSpan')
     parser.add_argument('-s', '--min_sup', required=False, type=float, default=0.5, help='minimum support threshold (%). Specifies the minimum support required for a pattern to be considered frequent. E.g., if set to 0.05, only patterns that appear in at least 5% of the sequences will be considered frequent.')
     parser.add_argument('-l', '--max_length', required=False, type=int, default=100, help='maximum pattern length to be considered by the CM-SPADE algorithm. This parameter sets a limit on the length of the patterns that the algorithm will consider. E.g., if set to 5, the algorithm will only consider patterns of up to five items in length.')
