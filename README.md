@@ -6,26 +6,24 @@ Create python env (Python 3.9.0)
 conda create -n <environment-name> python=3.9.0 --file req.txt
 ```
 ### Create the required dataframe from StatsBomb JSON file
-0. Joining frames to events using event_uuid in 360-frames and id in events
+1. Joining frames to events using event_uuid in 360-frames and id in events
 ```
 python dataset.json_to_df.py
 ```
-1. Data preprocessing and feature creating as in the NMSTPP model
+2. Data preprocessing and feature creating as in the NMSTPP model
 ```
 python dataset.preprocessing.py
 ```
-2. Splitting the train/valid/test set
+3. Splitting the train/valid/test set (train_df2/valid_df2/test_df2) were used for the paper
 ```
-python dataset.train_valid_test_split.py
+python dataset.train_valid_test_split.py 
 ```
-3. (Optional) Plotting the action, time, and zone
-```
-python dataset.plot.py
-```
-4. Train (Optional)  and Prediction
+### Model training and predicting
+1. Train (Optional) and Prediction
 ```
 python model.prediction_final.py
 ```
+
 5. Calculate the performance metrics
 ```
 python analysis.metrics.py
