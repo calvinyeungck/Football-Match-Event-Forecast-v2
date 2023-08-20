@@ -47,7 +47,7 @@ python analysis.sequences_pattern.py
 ### Plot the radar plot and scatter plot with mean shift clustering
 1. Radar plot
 ```
-python analysis.radar_plot.py
+python analysis.radar_plot.py -wo
 ```
 2.scatter plot
 ```
