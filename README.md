@@ -19,12 +19,20 @@ python dataset.preprocessing.py
 python dataset.train_valid_test_split.py 
 ```
 ### Model training and predicting
-1. Train (Optional) and Prediction
+1a. Prediction with pre-trained parameter
 ```
-python model.prediction_final.py
+python model.train_predict.py --param
 ```
+1b. Train the model and predict
+```
+python model.train_predict.py
 
-5. Calculate the performance metrics
+### Analysis the team tactics
+1. Extract team tactics
+```
+python 
+```
+2. Calculate the possession metrics (HPUS and HPUS+)
 ```
 python analysis.metrics.py
 ```
