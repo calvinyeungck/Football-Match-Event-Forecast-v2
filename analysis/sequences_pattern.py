@@ -7,10 +7,10 @@ import ast
 from tqdm import tqdm
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--sequences_action_df', type=str, default='/home/c_yeung/workspace6/python/statsbomb_conference_2023/script/analysis/sequences_encoded_action.csv')
-parser.add_argument('--sequences_zone_df', type=str, default='/home/c_yeung/workspace6/python/statsbomb_conference_2023/script/analysis/sequences_encoded_zone2.csv')
-parser.add_argument('--metrics_df', type=str, default='/home/c_yeung/workspace6/python/statsbomb_conference_2023/script/analysis/possession_metrics_df.csv')
-parser.add_argument('--out_path', type=str, default='/home/c_yeung/workspace6/python/statsbomb_conference_2023/script/analysis')
+parser.add_argument('--sequences_action_df', type=str, default='seq_mining/sequence_data_action_analysis/sequences_encoded.csv')
+parser.add_argument('--sequences_zone_df', type=str, default='seq_mining/sequence_data_zone_analysis/sequences_encoded.csv'')
+parser.add_argument('--metrics_df', type=str, default='analysis/possession_metrics_df.csv')
+parser.add_argument('--out_path', type=str, default='analysis')
 args = parser.parse_args()
 
 if not os.path.exists(args.out_path):
@@ -54,7 +54,7 @@ def has_ordered_items(input_list, target_items):
     return False
 
 pattern_list = []
-#loop through each possesion in the df row
+#loop through each possession in the df row
 for i in tqdm(range(len(sequences_action_df))):
     # pdb.set_trace()
     if len(sequences_action_df['flattened_act'][i])<6:
