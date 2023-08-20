@@ -49,7 +49,7 @@ python analysis.sequences_pattern.py
 ```
 python analysis.radar_plot.py -wo
 ```
-2.scatter plot
+2. scatter plot
 ```
 python analysis.clustering.py
 ```
