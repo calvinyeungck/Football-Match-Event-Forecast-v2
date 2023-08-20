@@ -40,6 +40,10 @@ python seq_mining.sequential_pattern_mining_zone.py -a PrefixSpan -s 0.3
 ```
 python analysis.metrics.py
 ```
+4. Create the dataframe that consists of the possession tactics and metrics
+```
+python analysis.sequences_pattern.py
+```
 
 
 
