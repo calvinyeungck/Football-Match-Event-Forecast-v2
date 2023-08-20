@@ -1,5 +1,6 @@
 # Football-Match-Event-Forecast-v2
 Repo for the StatsBomb conference 2023
+Similar open data (EURO 2020 and/or WCup 2022) can be used
 ## Code
 Create python env (Python 3.9.0)
 ```
