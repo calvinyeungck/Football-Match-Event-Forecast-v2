@@ -44,9 +44,15 @@ python analysis.metrics.py
 ```
 python analysis.sequences_pattern.py
 ```
-
-
-
+### Plot the radar plot and scatter plot with mean shift clustering
+1. Radar plot
+```
+python analysis.radar_plot.py
+```
+2.scatter plot
+```
+python analysis.clustering.py
+```
 ## Reference
 For technical details and full experimental results, please check [paper1](https://arxiv.org/abs/) and [paper2](https://arxiv.org/abs/2302.09276). Please consider citing our work if you find it helpful to yours:
 
