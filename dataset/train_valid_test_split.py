@@ -5,9 +5,9 @@ import argparse
 import os
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--preprocessed_event_df_path","-d", help="event_df.csv path",default="/home/c_yeung/workspace6/python/statsbomb_conference_2023/data/preprocessed_event_df.csv")
-parser.add_argument("--match_df_path","-m", help="match_df.csv path",default="/home/c_yeung/workspace6/python/statsbomb_conference_2023/data/matches_df.csv")
-parser.add_argument("--out_path","-o", help="output folder path",default="/home/c_yeung/workspace6/python/statsbomb_conference_2023/data/")
+parser.add_argument("--preprocessed_event_df_path","-d", help="event_df.csv path",default="data/preprocessed_event_df.csv")
+parser.add_argument("--match_df_path","-m", help="match_df.csv path",default="data/matches_df.csv")
+parser.add_argument("--out_path","-o", help="output folder path",default="data/")
 parser.add_argument("--sample_df","-s", help="output a sample of event_df.csv",default=True, required=False)
 args = parser.parse_args()
 
