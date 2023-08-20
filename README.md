@@ -1,10 +1,11 @@
 # Football-Match-Event-Forecast-v2
 Repo for the StatsBomb conference 2023
 ## Code
-0. Install required packages (Python 3.9.0)
+Create python env (Python 3.9.0)
 ```
-pip install -r requirements.yml
+conda create -n <environment-name> python=3.9.0 --file req.txt
 ```
+### Create the required dataframe from StatsBomb JSON file
 0. Joining frames to events using event_uuid in 360-frames and id in events
 ```
 python dataset.json_to_df.py
