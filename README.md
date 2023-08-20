@@ -26,7 +26,7 @@ python model.train_predict.py --param
 1b. Train the model and predict
 ```
 python model.train_predict.py
-
+```
 ### Analysis the team tactics
 1. Extract team tactics
 ```
