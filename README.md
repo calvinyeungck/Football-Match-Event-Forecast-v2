@@ -4,7 +4,7 @@ Repo for the StatsBomb conference 2023 paper "An Events and 360 Data-driven Appr
 The collective behavior of opposing multi-agent teams has been extensively researched in game theory, robotics, and sports analytics. In sports, team tactics frequently encompass the individuals’ strategic spatial and eventual behavior and are denoted in sequences of events, which are also known as possession in football. Analysis of team tactics is critical for training, strategy, and, ultimately, team success. While conventional notation and statistical approaches provide valuable insights into team tactics, contextual information has been overlooked, and teams' performance was not evaluated. To consider the contextual information, we employed the sequential pattern mining algorithm PrefixSpan to extract team tactics from possession, the Neural Marked Spatio Temporal Point Process (NMSTPP) model to model expected team behavior for a fair comparison between teams, and the metrics Holistic Possession Utilization Score (HPUS) to evaluate possessions.  In experiments, We identified five team tactics, validated the NMSTPP when incorporated with StatsBomb 360 data, and analyzed English Premier League (EPL) teams in season 2022/2023, with the results visualized using radar plots and scatter plots with mean shift clustering. 
 ### NMSTPP+360 model
 <p align="center">
-  <img src="https://github.com/calvinyeungck/Football-Match-Event-Forecast-v2/blob/main/fig/NMSTPP%2B360.png" alt="alt text" style="width: 60%;">
+  <img src="https://github.com/calvinyeungck/Football-Match-Event-Forecast-v2/blob/main/fig/NMSTPP%2B360%20model.png" style="width: 60%;">
 </p>
 
 ### Radar plot
