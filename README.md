@@ -38,7 +38,7 @@ python dataset.train_valid_test_split.py
 ### Model training and predicting
 1a. Prediction with pre-trained parameter
 ```
-python model.train_predict.py --param
+python model.train_predict.py -param -ff
 ```
 1b. Train the model and predict
 ```
