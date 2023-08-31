@@ -42,7 +42,7 @@ python model.train_predict.py -param -ff
 ```
 1b. Train the model and predict
 ```
-python model.train_predict.py
+python model.train_predict.py -ff
 ```
 ### Extract and evaluate the team tactics
 1. Extract team tactics in actions
