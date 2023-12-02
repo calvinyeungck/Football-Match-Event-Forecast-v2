@@ -74,8 +74,9 @@ python analysis.clustering.py
 For technical details and full experimental results, please check [paper1](https://arxiv.org/abs/) and [paper2](https://arxiv.org/abs/2302.09276). Please consider citing our work if you find it helpful to yours:
 
 ```
-@article{
-
+@article{yeungevents,
+  title={An Events and 360 Data-Driven Approach for Extracting Team Tactics and Evaluating Performance in Football},
+  author={Yeung, Calvin and Bunker, Rory}
 }
 
 @article{yeung2023transformer,
